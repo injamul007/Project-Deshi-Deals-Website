@@ -21,7 +21,118 @@
     <!-- daisy UI and tailwind css link -->
   </head>
   <body>
-    <h1 class="text-[40px] font-bold">Hello Deshi Deals</h1>
-
+    <header>
+      <nav class="flex justify-center items-center gap-1 shadow py-3">
+        <div class="w-12">
+          <img src="./assets/new_logo.png" alt="logo_image" class="w-full" />
+        </div>
+        <div>
+          <h2 class="text-pink-500 text-xl">
+            Deshi <span class="font-bold">Deals</span>
+          </h2>
+          <p class="text-sm text-gray-500">Cheap Price , Best Quality</p>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-gray-100">
+      <section id="banner_section"></section>
+      <section
+        id="products_container"
+        class="w-11/12 mx-auto grid grid-cols-12 gap-14"
+      >
+        <section id="product_box" class=" col-span-9">
+          <div class="kitchen">
+            <h1 class="text-3xl font-bold mb-5">Kitchenware</h1>
+            <div class="kitchen_items grid grid-cols-3 gap-5">
+              <!-- product card 1 -->
+              <div class="card bg-base-100 shadow-sm">
+                <figure class="py-6 m-5 bg-gray-200">
+                  <img
+                    src="./assets/kitchen_stuff-1.png"
+                    alt="kitchen1"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">K. Accessories1</h2>
+                  <p class="text-gray-500 font-bold">30.00 TK</p>
+                  <div class="card-actions w-full">
+                    <button class="btn bg-pink-500 w-full text-white">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product card 2 -->
+              <div class="card bg-base-100 shadow-sm">
+                <figure class="py-6 m-5 bg-gray-200 text-white">
+                  <img
+                    src="./assets/kitchen_stuff_2.png"
+                    alt="kitchen2"
+                    class="rounded-xl h-34"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">K. Accessories2</h2>
+                  <p class="text-gray-500 font-bold">35.00 TK</p>
+                  <div class="card-actions w-full">
+                    <button class="btn bg-pink-500 w-full text-white">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product card 3 -->
+              <div class="card bg-base-100 shadow-sm">
+                <figure class="py-6 m-5 bg-gray-200">
+                  <img
+                    src="./assets/kitchen_stuff_3.png"
+                    alt="kitchen3"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">Home Cooker</h2>
+                  <p class="text-gray-500 font-bold">49.00 TK</p>
+                  <div class="card-actions w-full">
+                    <button class="btn bg-pink-500 w-full text-white">
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside id="cart_box" class=" col-span-3 ">
+          <div class="bg-white p-5 rounded-md">
+          <h2 class="font-bold mb-3">Have a Coupon</h2>
+          <div class="join p-2">
+            <input class="input join-item rounded-l-xl" placeholder="Email" />
+            <button class="btn join-item rounded-r-xl">Apply</button>
+            </div>
+          </div>
+          <div class="cart_box bg-white mt-10 p-5">
+            <h2 class="font-bold">cart</h2>
+            <div class="" id="cart_contaiener"></div>
+            <div class="">
+              <h2>Total Price: <span id="total_price">0</span>TK</h2>
+              <h2>Total Quantity: <span id="total_quantity">0</span>Items</h2>
+              <div class="card-actions w-full">
+                <button class="btn bg-pink-500 w-full text-white">
+                  Make Purchase
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>
